@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BrowserStackDemoSite-android" thread-count="5" parallel="tests">
+
+   <test name="BrowserStackDemoSite-device1">
+        <parameter name="config" value="demo.android.json"/>
+        <parameter name="environment" value="env1"/>
+        <classes>
+            <class name="tests.bsDemoAppTest"/>
+        </classes>
+    </test>
+    <test name="BrowserStackDemoSite-device2">
+        <parameter name="config" value="demo.android.json"/>
+        <parameter name="environment" value="env2"/>
+        <classes>
+            <class name="tests.bsDemoAppTest"/>
+        </classes>
+    </test>
+    <test name="BrowserStackDemoSite-device3">
+        <parameter name="config" value="demo.android.json"/>
+        <parameter name="environment" value="env3"/>
+        <classes>
+            <class name="tests.bsDemoAppTest"/>
+        </classes>
+    </test>
+<!--<test name="playstore-android">
+    <parameter name="config" value="demo.conf.json"/>
+        <classes>
+            <class name="tests.playStoreLaunchAppTest"/>
+        </classes>
+    </test> -->
+</suite>

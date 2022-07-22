@@ -1,0 +1,12 @@
+{
+  "server": "hub-cloud.browserstack.com",
+
+  "capabilities": {
+    "deviceName": "Samsung Galaxy S8 Plus",
+    "project": "My First Project",
+    "build": "My First Build",
+    "name": "Bstack-[Java] Sample Test",
+    "platformName" : "android"
+
+  }
+}

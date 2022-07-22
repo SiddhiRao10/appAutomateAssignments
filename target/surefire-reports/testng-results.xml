@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="BrowserStackDemoSite-android" duration-ms="165862" started-at="2022-07-23T01:09:53 IST" finished-at="2022-07-23T01:12:39 IST">
+    <groups>
+    </groups>
+    <test name="BrowserStackDemoSite-device2" duration-ms="137496" started-at="2022-07-23T01:09:53 IST" finished-at="2022-07-23T01:12:11 IST">
+      <class name="tests.bsDemoAppTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:tests.bsDemoAppTest@72b6cbcc]" name="setUp" is-config="true" duration-ms="36946" started-at="2022-07-23T01:09:53 IST" finished-at="2022-07-23T01:10:30 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[demo.android.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[env2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="demoSiteTest()[pri:0, instance:tests.bsDemoAppTest@72b6cbcc]" name="demoSiteTest" duration-ms="98471" started-at="2022-07-23T01:10:30 IST" finished-at="2022-07-23T01:12:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demoSiteTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.bsDemoAppTest@72b6cbcc]" name="tearDown" is-config="true" duration-ms="2016" started-at="2022-07-23T01:12:09 IST" finished-at="2022-07-23T01:12:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=demoSiteTest status=SUCCESS method=bsDemoAppTest.demoSiteTest()[pri:0, instance:tests.bsDemoAppTest@72b6cbcc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.bsDemoAppTest -->
+    </test> <!-- BrowserStackDemoSite-device2 -->
+    <test name="BrowserStackDemoSite-device3" duration-ms="165862" started-at="2022-07-23T01:09:53 IST" finished-at="2022-07-23T01:12:39 IST">
+      <class name="tests.bsDemoAppTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:tests.bsDemoAppTest@7c29daf3]" name="setUp" is-config="true" duration-ms="48369" started-at="2022-07-23T01:09:53 IST" finished-at="2022-07-23T01:10:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[demo.android.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[env3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="demoSiteTest()[pri:0, instance:tests.bsDemoAppTest@7c29daf3]" name="demoSiteTest" duration-ms="115272" started-at="2022-07-23T01:10:42 IST" finished-at="2022-07-23T01:12:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demoSiteTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.bsDemoAppTest@7c29daf3]" name="tearDown" is-config="true" duration-ms="2134" started-at="2022-07-23T01:12:37 IST" finished-at="2022-07-23T01:12:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=demoSiteTest status=SUCCESS method=bsDemoAppTest.demoSiteTest()[pri:0, instance:tests.bsDemoAppTest@7c29daf3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.bsDemoAppTest -->
+    </test> <!-- BrowserStackDemoSite-device3 -->
+  </suite> <!-- BrowserStackDemoSite-android -->
+</testng-results>

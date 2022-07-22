@@ -1,0 +1,29 @@
+{
+  "user": "BROWSERSTACK_USERNAME",
+  "key": "BROWSERSTACK_ACCESS_KEY",
+  "app.ios": "BrowserStackDemoAppIos",
+  "platformName": "iOS",
+  "deviceName": "iPhone 13",
+  "platformVersion": "15.2",
+  "automationName": "XCUITest",
+  "tests": {
+    "parallel": {
+      "common_caps": {
+        "project": "browserstack-examples",
+        "build": "browserstack-examples-testNG",
+        "name": "Parallel Test",
+        "browserstack.debug": "true",
+        "browserstack.networkLogs": "true",
+        "browserstack.console": "verbose"
+      },
+      "env_caps": [
+        {
+          "device": "iPhone 12 Pro",
+          "platformName": "iOS",
+          "os_version": "14",
+          "gpsEnabled": "true"
+        }
+      ]
+    }
+  }
+}

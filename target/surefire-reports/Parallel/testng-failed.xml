@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Parallel]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" parallel="tests" name="BrowserStackDemoSite(failed)" verbose="0">
+    <parameter name="config" value="demo.android.json"/>
+    <classes>
+      <class name="tests.bsDemoAppTest">
+        <methods>
+          <include name="demoSiteTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.bsDemoAppTest -->
+    </classes>
+  </test> <!-- BrowserStackDemoSite(failed) -->
+</suite> <!-- Failed suite [Parallel] -->

@@ -1,0 +1,22 @@
+{
+  "server": "hub-cloud.browserstack.com",
+
+  "capabilities": {
+    "project": "App automate",
+    "build": "android demo",
+    "name": "Bstack-demo -android",
+    "platformName" : "android"
+
+  },
+  "environments": {
+    "env1": {
+      "deviceName": "Samsung Galaxy S22 Ultra"
+    },
+    "env2": {
+      "deviceName": "Samsung Galaxy S22"
+    },
+    "env3": {
+      "deviceName": "Samsung Galaxy S9 Plus"
+    }
+  }
+}

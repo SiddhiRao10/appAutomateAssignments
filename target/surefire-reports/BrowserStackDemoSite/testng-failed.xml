@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [BrowserStackDemoSite]" parallel="tests">
+  <test thread-count="5" verbose="0" name="BrowserStackDemoSite-device3(failed)" parallel="tests">
+    <parameter name="environment" value="env3"/>
+    <parameter name="config" value="demo.android.json"/>
+    <classes>
+      <class name="tests.bsDemoAppTest">
+        <methods>
+          <include name="demoSiteTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.bsDemoAppTest -->
+    </classes>
+  </test> <!-- BrowserStackDemoSite-device3(failed) -->
+  <test thread-count="5" verbose="0" name="BrowserStackDemoSite-device2(failed)" parallel="tests">
+    <parameter name="environment" value="env2"/>
+    <parameter name="config" value="demo.android.json"/>
+    <classes>
+      <class name="tests.bsDemoAppTest">
+        <methods>
+          <include name="demoSiteTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.bsDemoAppTest -->
+    </classes>
+  </test> <!-- BrowserStackDemoSite-device2(failed) -->
+  <test thread-count="5" verbose="0" name="BrowserStackDemoSite-device1(failed)" parallel="tests">
+    <parameter name="environment" value="env1"/>
+    <parameter name="config" value="demo.android.json"/>
+    <classes>
+      <class name="tests.bsDemoAppTest">
+        <methods>
+          <include name="demoSiteTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.bsDemoAppTest -->
+    </classes>
+  </test> <!-- BrowserStackDemoSite-device1(failed) -->
+</suite> <!-- Failed suite [BrowserStackDemoSite] -->

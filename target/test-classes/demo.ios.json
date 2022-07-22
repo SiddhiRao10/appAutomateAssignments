@@ -1,0 +1,22 @@
+{
+  "server": "hub-cloud.browserstack.com",
+
+  "capabilities": {
+    "os_version": "15",
+    "project": "App automate",
+    "build": "iOS demo",
+    "name": "Bstack-demo -iOS",
+    "platformName" : "ios"
+  },
+  "environments": {
+    "env1": {
+      "device": "iPhone 11"
+    },
+    "env2": {
+      "device": "iPhone XS"
+    },
+    "env3": {
+      "device": "iPhone 13"
+    }
+  }
+}
