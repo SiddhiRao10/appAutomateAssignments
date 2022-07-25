@@ -1,4 +1,43 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 166.51 sec - in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 145.167 sec <<< FAILURE! - in TestSuite
+demoSiteTest(tests.playStoreLaunchAppTest)  Time elapsed: 55.024 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Siddhis-MacBook-Pro.local', ip: '2401:4900:1c21:84b2:15ff:836c:714e:e065%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '18.0.1.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: host.exp.exponent.MainActivity, appPackage: com.browserstack.demo.app, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.0, buildName: automateAssignment, bundleID: com.browserstack.demo.app, bundleId: com.browserstack.demo.app, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: host.exp.exponent.MainActivity, appPackage: com.browserstack.demo.app, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.0, buildName: automateAssignment, bundleID: com.browserstack.demo.app, bundleId: com.browserstack.demo.app, chromeOptions: {w3c: false}, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], databaseEnabled: false, desired: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: host.exp.exponent.MainActivity, appPackage: com.browserstack.demo.app, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.0, buildName: automateAssignment, bundleID: com.browserstack.demo.app, bundleId: com.browserstack.demo.app, chromeOptions: {w3c: false}, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], detected_language: selenium/3.141.59 (java mac), device: google pixel 5, deviceName: Android, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, mobile: {browser: mobile, version: Google Pixel 5-12.0}, nativeWebScreenshot: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, platform: ANDROID, platformName: Android, projectName: App automate, realMobile: true, sessionName: Bstack-demo -android, skipServerInstallation: true, systemPort: 8202, udid: 13261FDD4003WQ, uiautomator2ServerLaunchTimeout: 60000, version: }, detected_language: selenium/3.141.59 (java mac), device: google pixel 5, deviceApiLevel: 31, deviceManufacturer: Google, deviceModel: Pixel 5, deviceName: 13261FDD4003WQ, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: 13261FDD4003WQ, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 5-12.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, pixelRatio: 2.75, platform: ANDROID, platformName: Android, platformVersion: 12, projectName: App automate, realMobile: true, sessionId: a8ff7dfa69c6a7e01b2e149c0ec..., sessionName: Bstack-demo -android, skipServerInstallation: true, statBarHeight: 145, systemPort: 8202, takesScreenshot: true, udid: 13261FDD4003WQ, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2015, left: 0, top: 145, width: 1080}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 5, deviceApiLevel: 31, deviceManufacturer: Google, deviceModel: Pixel 5, deviceName: 13261FDD4003WQ, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: 13261FDD4003WQ, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 5-12.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, pixelRatio: 2.75, platform: ANDROID, platformName: android, platformVersion: 12, projectName: App automate, realMobile: true, sessionId: a8ff7dfa69c6a7e01b2e149c0ec..., sessionName: Bstack-demo -android, skipServerInstallation: true, statBarHeight: 145, systemPort: 8202, takesScreenshot: true, udid: 13261FDD4003WQ, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2015, left: 0, top: 145, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: a8ff7dfa69c6a7e01b2e149c0ec2f1e2623409f9
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text='Open']}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at tests.playStoreLaunchAppTest.demoSiteTest(playStoreLaunchAppTest.java:56)
+

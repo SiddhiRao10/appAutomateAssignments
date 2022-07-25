@@ -42,20 +42,25 @@ public class BaseTest {
     @Parameters(value = {"config", "environment"})
     public void setUp(String config_file, String environment) throws Exception {
         File name = new File("src/test/resources/" + config_file);
-        if (name.toString().equals("src/test/resources/demo.conf.json")) {
+        if (name.toString().equals("src/test/resources/demo.playstore.json")) {
             JSONParser parser = new JSONParser();
             JSONObject config = (JSONObject) parser.parse(new FileReader("src/test/resources/" + config_file));
+
             JSONObject envs = (JSONObject) config.get("environments");
+            Map<String, String> envCapabilities = (Map<String, String>) envs.get(environment);
+            Iterator it = envCapabilities.entrySet().iterator();
+            while (it.hasNext()) {
+                Map.Entry pair = (Map.Entry) it.next();
+                capabilities.setCapability(pair.getKey().toString(), pair.getValue().toString());
+            }
             Map<String, String> commonCapabilities = (Map<String, String>) config.get("capabilities");
-            Iterator it = commonCapabilities.entrySet().iterator();
+            it = commonCapabilities.entrySet().iterator();
             while (it.hasNext()) {
                 Map.Entry pair = (Map.Entry) it.next();
                 if (capabilities.getCapability(pair.getKey().toString()) == null) {
                     capabilities.setCapability(pair.getKey().toString(), pair.getValue().toString());
                     capabilities.setCapability("build", buildName);
                    capabilities.setCapability("app", "bs://6c5f944cad2252a75f41fc2a751ce102e8500b9d");
-               //     capabilities.setCapability("browserstack.local", "true");
-                 //   capabilities.setCapability("browserstack.appium_version", "1.18.0");
                     capabilities.setCapability("browserstack.networkLogs", "true");
                     capabilities.setCapability("browserstack.user",username);
                     capabilities.setCapability("browserstack.key",accessKey);
@@ -63,20 +68,6 @@ public class BaseTest {
 
                 }
             }
-            if (username == null) {
-                username = (String) config.get("user");
-            }
-            if (accessKey == null) {
-                accessKey = (String) config.get("key");
-            }
-           // HashMap<String, String> bsLocalArgs = new HashMap<String, String>();
-           // bsLocalArgs.put("key", accessKey);
-
-            // Starts the Local instance with the required arguments
-         //   bsLocal.start(bsLocalArgs);
-
-         //   System.out.println(bsLocal.isRunning());
-           // driver.set(new AppiumDriver(new URL("https://" + username + ":" + accessKey + "@" + BROWSERSTACK_HUB_URL + "/wd/hub"), capabilities));
             driver = new AndroidDriver<MobileElement>(new URL("https://" + username + ":" + accessKey + "@" + BROWSERSTACK_HUB_URL + "/wd/hub"), capabilities);
 
         }
@@ -91,8 +82,6 @@ public class BaseTest {
                 Map.Entry pair = (Map.Entry) it.next();
                 capabilities.setCapability(pair.getKey().toString(), pair.getValue().toString());
             }
-
-
             Map<String, String> commonCapabilities = (Map<String, String>) config.get("capabilities");
              it = commonCapabilities.entrySet().iterator();
             while (it.hasNext()) {

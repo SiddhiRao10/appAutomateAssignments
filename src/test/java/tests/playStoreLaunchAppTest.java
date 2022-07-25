@@ -52,20 +52,10 @@ public class playStoreLaunchAppTest extends BaseTest {
                 .withTimeout(Duration.ofSeconds(2))
                 .pollingEvery(Duration.ofSeconds(10))
                 .ignoring(NotFoundException.class);
-        Thread.sleep(20000);
+        Thread.sleep(50000);
        driver.findElement(By.xpath("//android.widget.TextView[@text='Open']")).click();
             System.out.println("App is installed");
-            confirm=1;
         Thread.sleep(8000);
-
-        JavascriptExecutor jse = (JavascriptExecutor)driver;
-        if (confirm==1) {
-            jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"passed\", \"reason\": \"Test Passed\"}}");
-        }
-        else {
-            jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\":\"failed\", \"reason\": \"Results not found\"}}");
-        }
-
-
+        
     }
 }
