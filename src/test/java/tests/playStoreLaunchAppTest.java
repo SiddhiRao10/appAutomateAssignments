@@ -56,6 +56,6 @@ public class playStoreLaunchAppTest extends BaseTest {
        driver.findElement(By.xpath("//android.widget.TextView[@text='Open']")).click();
             System.out.println("App is installed");
         Thread.sleep(8000);
-        
+
     }
 }

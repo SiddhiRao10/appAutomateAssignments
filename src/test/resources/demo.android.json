@@ -2,7 +2,6 @@
   "server": "hub-cloud.browserstack.com",
 
   "capabilities": {
-    "project": "App automate",
     "name": "Bstack-demo -android",
     "platformName" : "android"
 

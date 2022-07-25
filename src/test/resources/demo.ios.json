@@ -3,7 +3,6 @@
 
   "capabilities": {
     "os_version": "15",
-    "project": "App automate",
     "name": "Bstack-demo -iOS",
     "platformName" : "ios"
   },

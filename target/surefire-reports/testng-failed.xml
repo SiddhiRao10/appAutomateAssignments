@@ -1,17 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [playstore-android]" guice-stage="DEVELOPMENT" verbose="0">
-  <test thread-count="5" parallel="tests" name="playstore-android(failed)" verbose="0">
-    <parameter name="environment" value="env1"/>
-    <parameter name="config" value="demo.playstore.json"/>
+<suite parallel="tests" name="Failed suite [BrowserStackDemoSite-android]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" parallel="tests" name="BrowserStackDemoSite-device2(failed)" verbose="0">
+    <parameter name="environment" value="env2"/>
+    <parameter name="config" value="demo.android.json"/>
     <classes>
-      <class name="tests.playStoreLaunchAppTest">
+      <class name="tests.bsDemoAppTest">
         <methods>
           <include name="demoSiteTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- tests.playStoreLaunchAppTest -->
+      </class> <!-- tests.bsDemoAppTest -->
     </classes>
-  </test> <!-- playstore-android(failed) -->
-</suite> <!-- Failed suite [playstore-android] -->
+  </test> <!-- BrowserStackDemoSite-device2(failed) -->
+  <test thread-count="5" parallel="tests" name="BrowserStackDemoSite-device3(failed)" verbose="0">
+    <parameter name="environment" value="env3"/>
+    <parameter name="config" value="demo.android.json"/>
+    <classes>
+      <class name="tests.bsDemoAppTest">
+        <methods>
+          <include name="demoSiteTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.bsDemoAppTest -->
+    </classes>
+  </test> <!-- BrowserStackDemoSite-device3(failed) -->
+  <test thread-count="5" parallel="tests" name="BrowserStackDemoSite-device1(failed)" verbose="0">
+    <parameter name="environment" value="env1"/>
+    <parameter name="config" value="demo.android.json"/>
+    <classes>
+      <class name="tests.bsDemoAppTest">
+        <methods>
+          <include name="demoSiteTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.bsDemoAppTest -->
+    </classes>
+  </test> <!-- BrowserStackDemoSite-device1(failed) -->
+</suite> <!-- Failed suite [BrowserStackDemoSite-android] -->
